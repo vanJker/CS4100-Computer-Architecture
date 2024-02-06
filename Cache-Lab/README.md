@@ -17,6 +17,8 @@ $ ./cache -f {case filename} -c {cache size (KB)} -b {block size(B)} -a {associa
 
 ## Tips
 
+可以参考黄婷婷教授的投影片 [05-Memory](../Lecture-Slides/05-Memory.pdf) Memory-48 ~ 57 补足理论知识。
+
 Clang format is based on LLVM style with identwidth equal 4.
 
 输出时需要注意，需要将 `cout` 输出流的整数进制改为十进制 `cout << dec`，因为之前在读取地址时使用了十六进制 `cout << hex << x << " ";`。
