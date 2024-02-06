@@ -4,12 +4,13 @@
 
 个人认为能力是在实作中提升，但遗憾的是，该课程并未公开作业部分，经过一番搜寻，发现阳明交大李毅郎教授和科技大学刘一宇副教授均有开发 Cache 相关的实作，遂以这些作为本课程的作业。
 
-> 交大李毅郎教授讲授的 [计算机组织][nycu-co] 同样基于 MIPS 指令集，同时还开放了课程录影和投影片，可以与本课程进行比照学习。
+> 交大李毅郎教授讲授的 [計算機組織][nycu-co] 同样基于 MIPS 指令集，同时还开放了[课程录影](https://www.youtube.com/playlist?list=PLj6E8qlqmkFvSHyGAFqY4sX0Ee7eLqmq2)，可以与本课程进行比照学习。
 
 阳明交大李毅郎教授相关 Labs (Lab6 为 Cache Lab):
 
 - https://github.com/nctu-ms07/Computer-Organization [Spring 2020]
 - https://github.com/wishx97/Computer-Organization-NCTU [Spring 2018]
+- https://github.com/Sea-n/NCTU-109B-Comp-Org [Spring 2021]
 
 科技大学刘一宇副教授关于 Cache 的 Labs:
 
