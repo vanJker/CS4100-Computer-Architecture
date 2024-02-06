@@ -11,6 +11,7 @@
 using namespace std;
 
 const char *test_file = nullptr;
+const char *plot_file = nullptr;
 const int K = 1024;
 
 struct cache_content {
@@ -81,12 +82,19 @@ void simulate(int cache_size, int block_size, int associativity) {
 
     delete[] cache;
 
+    double miss_rate = (double)miss.size() * 100 / (double)instr;
+
     cout << dec << endl;
     cout << "instructions: " << instr << endl;
     cout << "Hits instructions: " << instructions(hit) << endl;
     cout << "Misses instructions: " << instructions(miss) << endl;
-    cout << "Miss rate: " << (double)miss.size() * 100 / (double)instr << "%"
-         << endl;
+    cout << "Miss rate: " << miss_rate << "%" << endl;
+
+    if (plot_file) {
+        FILE *fp = fopen(plot_file, "a"); // plot file
+        fprintf(fp, "\t%f", miss_rate);
+        fclose(fp);
+    }
 }
 
 int main(int argc, char *argv[]) {
@@ -96,23 +104,29 @@ int main(int argc, char *argv[]) {
     int associativity = 1;
     int opt;
 
-    while ((opt = getopt(argc, argv, "f:c:b:a:")) != EOF) {
+    while ((opt = getopt(argc, argv, "f:c:b:a:p:s")) != EOF) {
         switch (opt) {
         case 'f':
             test_file = optarg;
             break;
         case 'c':
             cache_size = atoi(optarg);
-            assert(cache_size >= 1 && cache_size <= 256);
+            assert(cache_size >= 1 && cache_size <= 512);
             break;
         case 'b':
             block_size = atoi(optarg);
-            assert(block_size >= 16 && block_size <= 256);
+            assert(block_size >= 2 && block_size <= 256);
             break;
         case 'a':
             associativity = atoi(optarg);
             assert(associativity >= 1 &&
-                   associativity <= (cache_size / block_size));
+                   associativity <= (cache_size * K / block_size));
+            break;
+        case 'p':
+            plot_file = optarg;
+            break;
+        case 's':
+            cout.rdbuf(nullptr);
             break;
         }
     }
