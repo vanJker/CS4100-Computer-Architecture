@@ -2,19 +2,25 @@
 
 在 CS4100 计算机结构这门课，黄婷婷教授大致按 Computer Organization and Design: The Hardway/Software Interface 这本书的顺序对计算机结构进行了详尽的讲解，着重讲解了1-5章的内容，课程与该教材搭配学习效果极佳。由于在这门课程的开课时间，教材只出到了 4ed，所以选用教材是 4ed，但是 5ed 和 4ed 内容差别不大，所以笔者采用了 5ed 进行学习。
 
+## Lab
+
 个人认为能力是在实作中提升，但遗憾的是，该课程并未公开作业部分，经过一番搜寻，发现阳明交大李毅郎教授和科技大学刘一宇副教授均有开发 Cache 相关的实作，遂以这些作为本课程的作业。
 
 > 交大李毅郎教授讲授的 [計算機組織][nycu-co] 同样基于 MIPS 指令集，同时还开放了[课程录影](https://www.youtube.com/playlist?list=PLj6E8qlqmkFvSHyGAFqY4sX0Ee7eLqmq2)，可以与本课程进行比照学习。
 
-阳明交大李毅郎教授相关 Labs (Lab6 为 Cache Lab):
+國立陽明交通大學李毅郎教授相關的 Labs (Lab6 為 Cache Lab):
 
 - https://github.com/nctu-ms07/Computer-Organization [Spring 2020]
 - https://github.com/wishx97/Computer-Organization-NCTU [Spring 2018]
 - https://github.com/Sea-n/NCTU-109B-Comp-Org [Spring 2021]
 
-科技大学刘一宇副教授关于 Cache 的 Labs:
+> 本人实作位于目录 [Cache-Lab/](./Cache-Lab/)
+
+國立台灣科技大學劉一宇副教授關於 Cache 的 Labs:
 
 - [快取記憶體組織](https://www.youtube.com/playlist?list=PLu7X08EhejdqIV5-9bqZ6u9uZOg1sBdwO) [YouTube]
+
+南京大学 计算机科学与技术系 [计算机系统基础 课程实验 (PA) 2023](https://nju-projectn.github.io/ics-pa-gitbook/ics2023/)
 
 ## Course Description
 
@@ -52,8 +58,7 @@ The Hardway/Software Interface, 5th Edition.
 
 #### 1.6 Performance 
 
-ISA影响Clock Rate，这是因为ISA所提供的指令会影响Clock Rate。
-例如，单周期处理器，提供单周期乘法指令和不提供单周期乘法指令的处理器，它们的Clock Rate是极有可能不同的。
+ISA 影响Clock Rate，这是因为ISA所提供的指令会影响 Clock Rate。例如，单周期处理器，提供单周期乘法指令和不提供单周期乘法指令的处理器，它们的 Clock Rate 是极有可能不同的。
 
 ### Memory
 
@@ -67,7 +72,8 @@ write back 不能像 write through 一样无需判断 tag 命中就重写数据�
 
 - 國立陽明交通大學 李毅郎教授   [計算機組織 Computer Organization – 100學年度][nycu-co]
 - 國立臺灣科技大學 劉一宇副教授 [Computer Organization](https://www.youtube.com/playlist?list=PLu7X08EhejdrFth-Y-or8vL2GW0GEnvDM)
-- [資工所考試 資源連結](https://fjuedu-my.sharepoint.com/:f:/g/personal/406401484_m365_fju_edu_tw/EnpviC9MYHVMjzJFgZAKeQMByJBWpgwRFXpN3_56bn2B-A?e=S7OkMH)
+- HackMD 上的 [資工所考試 資源連結](https://hackmd.io/@seanpeng12/ryizlt3C5)
+
 
 [cs4100]: https://ocw.nthu.edu.tw/ocw/index.php?page=course&cid=76&
 [video]: https://www.bilibili.com/video/BV1r4411s7Hj

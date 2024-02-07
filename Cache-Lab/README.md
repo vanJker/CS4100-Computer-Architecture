@@ -2,14 +2,27 @@
 
 ## Usage
 
+Build executable:
+
 ```bash
-# build executable
 $ make build
-# clean
+```
+
+Clean:
+
+```bash
 $ make clean
-# generate plots
+```
+
+Generate plots:
+
+```bash
 $ make plot
-# execute
+```
+
+Execute or Run:
+
+```bash
 $ ./cache -f {case filename} -c {cache size (KB)} -b {block size(B)} -a {associativity} -p {plot filename} -s
 ```
 
@@ -17,7 +30,9 @@ $ ./cache -f {case filename} -c {cache size (KB)} -b {block size(B)} -a {associa
 
 ## Tips
 
-可以参考黄婷婷教授的投影片 [05-Memory](../Lecture-Slides/05-Memory.pdf) Memory-48 ~ 57 补足理论知识。
+可以参考黄婷婷教授的投影片 [05-Memory](../Lecture-Slides/05-Memory.pdf) P48 ~ P57 补足理论知识。
+
+![](./.images/05-Memory-1.png)
 
 Clang format is based on LLVM style with identwidth equal 4.
 
