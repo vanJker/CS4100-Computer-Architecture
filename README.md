@@ -20,7 +20,19 @@
 
 - [快取記憶體組織](https://www.youtube.com/playlist?list=PLu7X08EhejdqIV5-9bqZ6u9uZOg1sBdwO) [YouTube]
 
-南京大学 计算机科学与技术系 [计算机系统基础 课程实验 (PA) 2023](https://nju-projectn.github.io/ics-pa-gitbook/ics2023/)
+除此之外，大陆高校和科研机构也开设了一些精品实验:
+
+中科院软件所 PLCT 实验室 [手搓 RISC-V 高性能模拟器](https://ksco.cc/rvemu/):
+
+- [手搓 RISC-V 高性能模拟器 (2023 年春季)](https://space.bilibili.com/296494084/channel/collectiondetail?sid=1245472) [bilibili]
+
+中科院软件所 PLCT 实验室 [从零开始实现链接器](https://ksco.cc/rvld/):
+
+- [从零开始实现链接器 (2022秋季)](https://space.bilibili.com/296494084/channel/collectiondetail?sid=857032) [bilibili]
+
+南京大学 计算机科学与技术系 [计算机系统基础 课程实验 (PA) 2023](https://nju-projectn.github.io/ics-pa-gitbook/ics2023/):
+
+- [ICS2023-南京大学计算机系统基础实验课](https://space.bilibili.com/49964811/channel/collectiondetail?sid=2085680) [bilibili]
 
 ## Course Description
 
